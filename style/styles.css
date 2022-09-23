@@ -76,7 +76,7 @@ nav .menuicon{
         z-index: 1;
         background-color: var(--navbarbg);
     }
-    .nav .dropdown:active .drpdown-content{
+    .nav .dropdown:hover .dropdown-content{
         display: block;
     }
     .nav .navlink{
