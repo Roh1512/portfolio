@@ -1,12 +1,12 @@
 :root{
     --bodybgcolor:white;
     --bodycolor:black;
-    --navbarbg:rgb(215, 178, 178);
+    --navbarbg:#efebe0;
     --logotextcolor:black;
     --navlinkcolor:black;
-    --navlinkbg:bisque;
-    --navlinkbghover:#bbb;
-    --navlinkcolorhover:rgb(8, 144, 101);
+    --navlinkbg:#efebe0;
+    --navlinkbghover:#d4c395;
+    --navlinkcolorhover:#2b240f;
 }
 body{
     background: var(--bodybgcolor);
@@ -17,7 +17,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
+    position: fixed;
     top: 0;
     flex-wrap: wrap;
     width: 100%;
