@@ -5,18 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/84c9548c9a.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Mulish:wght@200;300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style/styles.css">
     <title>Rohith A</title>
 </head>
 <body>
+    <!--top bar started-->
     <nav id="navbar" class="nav">
         <header class="logo"><a href="#"><h1>Rohith</h1></a></header>
         <div class="scroll">
             <ul class="navitems">
-                <a href="#" class="navlink">
+                <a href="#wecome-section" class="navlink">
                     <li>About</li>
                 </a>
-                <a href="#" class="navlink">
+                <a href="#project" class="navlink">
                     <li>Work</li>
                 </a>
                 <a href="#" class="navlink">
@@ -25,5 +29,72 @@
             </ul>
         </div>
     </nav>
+    <!--top bar ended-->
+    <!--welcome section started-->
+    <section id="welcome-section" class="welcome-section">
+        <h1>Hey I'm Rohith</h1>
+        <p>a web developer</p>
+    </section>
+    <!--welcome section ended-->
+    
+    <!--project section started-->
+    <section id="projects" class="project-section">
+        <h2 class="project-section-header">My Works</h2>
+        <div class="project-grid">
+            <div class="project-tile">
+                <a href="https://roh1512.github.io/tribute-page/" target="_blank" >
+                    <img src="./images/tribut-page-preview.png" alt="Preview image of the Work" class="project-image">
+                    <p class="project-title">Tribute Page</p>
+                </a>
+            </div>
+            <div class="project-tile">
+                <a href="#" target="_blank">
+                    <img src="./images/odin-landing-page.png" alt="Preview image of the Work" class="project-image">
+                    <p class="project-title">Landing Page project TOP</p>
+                </a>
+            </div>
+            <div class="project-tile">
+                <a href="https://roh1512.github.io/product-landing-page/" target="_blank">
+                    <img src="./images/Original-Trombone-landing-page.png" alt="Preview image of the Work" class="project-image">
+                    <p class="project-title">Original Trombone</p>
+                </a>
+            </div>
+            <div class="project-tile">
+                <a href="https://roh1512.github.io/technical-documentation-page/" target="_blank">
+                    <img src="./images/technical-documentation-preview.png" alt="Preview image of the Work" class="project-image">
+                    <p class="project-title">JS Documentation</p>
+                </a>
+            </div>
+            <div class="project-tile">
+                <a href="https://roh1512.github.io/Survey-form/" target="_blank">
+                    <img src="./images/survey-form-preview.png" alt="Preview image of the Work" class="project-image">
+                    <p class="project-title">fcc Survey Form</p>
+                </a>
+            </div>
+        </div>
+        <a href="#project"><button class="btn btn-show-all">Show all Works</button></a>
+    </section>
+    <!--project section ended-->
+
+    <!--Contact section started-->
+    <section id="contact" class="contact-section">
+        <div class="contact-section-header">
+            <h2>Let's Work Together</h2>
+            <p>How do you like your coffee?</p>
+        </div>
+        <div class="contact-links">
+            <a href="https://github.com/Roh1512" target="_blank" id="profile-link" class="btn-contact-link">
+                <i class="fa-brands fa-github" id="contact-icon"></i>GitHub</a>
+            <a href="mailto:rohith1512a@gmail.com" target="_blank" id="profile-link" class="btn-contact-link"><i class="fa-sharp fa-solid fa-envelope"></i>Email</a>
+        </div>
+    </section>
+    <!--Contact Section Ended-->
+
+    <!--Footer Section Start-->
+    <footer>
+        <p>Rohith A</p>
+        <p>&#169; All rights reserved</p>
+    </footer>
+    <!--Footer Section End-->
 </body>
 </html>

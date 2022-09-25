@@ -1,17 +1,24 @@
 :root{
-    --bodybgcolor:white;
+    --bodybgcolor:#efebe0;
     --bodycolor:black;
-    --navbarbg:#efebe0;
+    --navbarbg:#eeefe0;
     --logotextcolor:black;
     --navlinkcolor:black;
     --navlinkbg:#efebe0;
     --navlinkbghover:#d4c395;
     --navlinkcolorhover:#2b240f;
+    --mainheading:#5c1979;
+    --maindescription:#304070;
+    --tilebg:#303841;
 }
 body{
     background: var(--bodybgcolor);
     margin: 0;
+    font-family: 'Mulish',
+        sans-serif, sans-serif;
 }
+
+/*topbar start*/
 .nav{
     background: var(--navbarbg);
     display: flex;
@@ -23,6 +30,7 @@ body{
     width: 100%;
     height: auto;
     min-height: 80px;
+    border: 2px solid;
 }
 .nav .logo{
     padding-left: 5px;
@@ -43,7 +51,7 @@ body{
     justify-content: center;
     align-items: center;
     list-style: none;
-    gap: 20px;
+    gap: 1rem;
     padding-right: 20px;
 }
 .nav .navlink{
@@ -63,4 +71,149 @@ body{
     color: var(--navlinkcolorhover);
     font-weight: 900;
     transform: scale(1.3);
+}
+@media screen and (max-width:522px) {
+    .nav .navlink{
+        font-size: 1rem;
+        padding: 10px 5px;
+    }
+    .nav .navlink:hover{
+        transform: scale(1.1);
+    }
+}
+/*top bar end*/
+
+/*welcome section start*/
+.welcome-section{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.welcome-section > h1{
+    font-size: 3em;
+    text-align: center;
+    font-weight: bolder;
+    margin: 0;
+    color: var(--mainheading);
+}
+.welcome-section > p{
+    font-weight: 900;
+    font-size: 2rem;
+    margin: 0;
+    color: var(--maindescription);
+}
+/*welcome section end*/
+
+
+/*Project section start*/
+.project-section{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 5rem;
+}
+.project-section > .project-section-header{
+    text-align: center;
+    font-size: 3rem;
+    color: var(--navlinkcolor);
+    font-weight: 900;
+    text-shadow: 1px 2px var(--navlinkcolor) ;
+    width: 100%;
+}
+.project-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 4em;
+    width: 100%;
+    max-width: 1089px;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+
+}
+.project-tile{
+    background: var(--tilebg);
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px rgb(0 0 0 / 50%);
+    height: 400px;
+    box-sizing: border-box;
+    overflow: auto;
+}
+.project-tile > a{
+    text-decoration: none;
+}
+.project-grid img{
+    height: calc(100% - 20%);
+    width: 100%;
+    object-fit: fill;
+    box-sizing: border-box;
+}
+.project-title{
+    font-size: 2rem;
+    color: var(--navbarbg);
+    margin-bottom: 0;
+}
+.btn-show-all{
+    font-size: 2rem;
+    font-weight: 500;
+    padding: 1rem 2rem;
+    color: var(--navbarbg);
+    background: var(--tilebg);
+    border: transparent;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/*project-end*/
+
+/*contact section starts*/
+.contact-section{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 70vh;
+    align-items: center;
+}
+.contact-section .contact-section-header h2{
+    font-size: 3rem;
+    font-weight: 900;
+    margin: bottom 10px;
+    text-align: center;
+}
+.contact-section .contact-section-header p{
+    text-align: center;
+    font-size: 2rem;
+    font-style: italic;
+    margin: 0;
+}
+.contact-links{
+    display: flex;
+    margin-top: 2rem;
+    gap: 3rem;
+    font-size: 1.4rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 900px;
+}
+.btn-contact-link{
+    margin: 0;
+    color: #2b240f;
+    border-radius: 5px;
+    background:var(--tilebg);
+    padding: 5px 10px;
+    color: var(--navlinkbg);
+}
+.contact-links i{
+    color: var(--navlinkbg);
+    font-size: 2rem;
+}
+/*contact section ends*/
+
+/*footer*/
+footer{
+    text-align: center;
+    font-weight: 600;
 }
