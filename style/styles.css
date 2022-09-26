@@ -1,7 +1,7 @@
 :root{
-    --bodybgcolor:#efebe0;
+    --bodybgcolor:#eee;
     --bodycolor:black;
-    --navbarbg:#eeefe0;
+    --navbarbg:#eee;
     --logotextcolor:black;
     --navlinkcolor:black;
     --navlinkbg:#efebe0;
@@ -70,7 +70,7 @@ body{
     background-color: var(--navlinkbghover);
     color: var(--navlinkcolorhover);
     font-weight: 900;
-    transform: scale(1.3);
+    transform: scale(1.2);
 }
 @media screen and (max-width:522px) {
     .nav .navlink{
